@@ -1,1 +1,923 @@
 // Specific CSS for your home-page
+/*
+Colors used:
+primarily Color (orange) : #ffe4c4;
+Secondary Color (yellow):  #F7B708;
+*/
+/*#fb8500 Orange colour for CTA buttons
+  #efefef lightgrey colour for background
+  #4a4a4a charcoal colour for header background
+  #ffffff white colour for body background*/
+header {
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  /*adding shadows to the header section*/
+  background-color: #fcfcfc;
+  color: transparent;
+  padding: 10px 0;
+}
+
+header a {
+	text-decoration: none;
+}
+
+body a {
+	text-decoration: none;
+}
+
+.navtoggle li:not(:last-child), .dropdown-content {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #d6d9de;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  background-color: transparent;
+  transition: 0.2s all;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li>a:visited {
+  color: #453E3E;
+  background-color: transparent;
+}
+
+nav>ul>li>a:hover, a:focus {
+  color: #fb8500;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav>ul>li>a:active {
+  color: #453E3E;
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Asap, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Asap, sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+	margin-top: 1.5rem;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 70px;
+    float: left;
+}
+
+.project-scr img {
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+  text-align: center;
+}
+
+#work h4 {
+  padding-left: 20px;
+}
+
+a {
+  color: #453E3E;
+  background-color: transparent;
+  text-decoration: none;
+  /* remove underlining */
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block*/
+  background-color: transparent;
+  color: #fb8500;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 2px solid #fb8500;
+  transition: 0.2s all;
+  transition-property: opacity;
+  /* width of the border, type, color */
+  /*transition: 0.2s opacity;*/
+}
+
+.button:hover {
+  color: #FFFFFF;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  background-color: #fb8500;
+  opacity: 0.7;
+  transition: 0.8s all;
+}
+
+.button.contact, .button.cv {
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+.button.cv {
+  color: #453E3E;
+  border: 2px solid #453E3E
+}
+
+.button.cv:hover {
+  background-color: #453E3E;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  opacity: 0.8;
+  transition: 0.8s all;
+}
+
+.contact:hover {
+  background-color: #fb8500;
+  font-weight: 400;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  opacity: 0.8;
+  transition: 0.8s all;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.contentwrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentwrapper .row h2 {
+  text-align: right;
+  border-bottom: 25px;
+  margin: 25px 0;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and
+ bottom, 0 left and right */
+}
+
+#work .row {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d6d9de;
+}
+
+.contentwrapper .row {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d6d9de;
+}
+
+.logo {
+  max-width: 150Px;
+}
+
+.logo-size svg {
+  width: 70px;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#hero {
+  text-align: center;
+  background-color: #4a4a4a;
+  padding: 60px 10px 60px 10px;
+  /*  background-color: #ffffff;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;*/
+}
+
+#herotext h1, #herotext h4 {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+#hero span {
+  display: block;
+}
+
+main {
+  padding-top: 100px;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
+}
+
+#work h3 {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  background-color: #4a4a4a;
+  padding: 10px;
+}
+
+#footertext h2 {
+  color: #fff;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+#footerp p {
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.social {
+  text-align: center;
+}
+
+.Social a {
+  font-size: 2em;
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+#story h2 {
+  text-align: left;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #4a4a4a;
+    /*  padding: 80px 20px 80px 20px;
+        background-color: #ffffff;
+      padding: 10px 0;
+      display: inline-block;
+      width: 100%;*/
+  }
+
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 40px;
+    float: left;
+  }
+
+  .project-scr img {
+    width: 50%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+  }
+
+  #work h3 {
+    margin: auto;
+  }
+
+  #story h3 {
+    padding-top: 11px;
+    margin: auto;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-right: 65px;
+    float: left
+  }
+
+
+  .project-scr img {
+    width: 40%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #4a4a4a;
+    padding: 60px 10px 60px 10px;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #4a4a4a;
+    /*padding: 80px;
+		background-color: #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;*/
+  }
+
+  #story h3 {
+    padding-top: 11px;
+    margin: auto;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 3;
+    list-style-type: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #fb8500;
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    min-width: 250px;
+  }
+
+  .dropdown-content li {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    padding-top: 5px;
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content a:hover {
+    background: #ffffff;
+    color: #fb8500;
+    font-size: 1.15em;
+    font-weight: 400;
+    transition: 0.4s all;
+  }
+
+  .dropdown-content li:last-child {
+    display: inline-block !important;
+    padding-bottom: 16px !important;
+  }
+
+  .dropdown-content li:first-child {
+    padding-top: 20px;
+  }
+
+  li.parent {
+    position: relative;
+  }
+
+  li.parent:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .self-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 40px;
+    float: left;
+  }
+
+  .project-scr img {
+    width: 40%;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    text-align: center;
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #4a4a4a;
+    /*padding: 80px;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;*/
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #4a4a4a;
+    padding: 60px 10px 60px 10px;
+  }
+
+  #story h3 {
+    padding-top: 11px;
+    margin: auto;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-xl-1 {
+    width: 8.33%;
+  }
+
+  .col-xl-2 {
+    width: 16.66%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.33%;
+  }
+
+  .col-xl-5 {
+    width: 41.66%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.33%;
+  }
+
+  .col-xl-8 {
+    width: 66.66%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.33%;
+  }
+
+  .col-xl-11 {
+    width: 91.66%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#skills h3 {
+  margin-top: 0;
+}
+
+.skillsimg {
+  float: right;
+  margin: 20px;
+  padding: 20px;
+}
+
+#skillstools {
+  text-align: center;
+  border-bottom: 25px;
+  margin: auto;
+}
+
+#skills {
+  padding: 0;
+  margin: 20px;
+  width: 50%;
+}
+
+#tools {
+  padding: 0;
+  margin: 20px;
+  width: 50%;
+} /*end of media queries*/
+
+#tools::after {
+  /*“clear” the flow*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.reverseimg [class*="col-"] {
+  padding-left: 20px;
+  padding-right: 20px;
+  float: right;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.social-network a.icogithub:hover {
+  background-color: #fb8500;
+}
+
+.social-network a.icobehance:hover {
+  background-color: #fb8500;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #fb8500;
+}
+
+.social-network a.icobehance:hover i, .social-network a.icogithub:hover i, .social-network a.icoLinkedin:hover i {
+  color: #ffffff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+  color: #fb8500;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #a8a8a8;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-circle i {
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/* end social icon transitions*/

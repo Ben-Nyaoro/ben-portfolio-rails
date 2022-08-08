@@ -1,0 +1,77 @@
+<main>	<!--whole section-->
+	<div class="contentwrapper">	<!--container block-->
+		<div class="row">			<!-- open row that holds (2) columns for project 1 -->
+			<div class="self-img column col-md-6 col-lg-5">	<!-- open first column (used for image) -->
+				<picture>
+					<source media="(max-width:767px)" srcset="selfimage_1x.png">
+					<%= image_tag 'selfimage_1x.png', alt: 'My Image' %>
+				</picture>
+			</div>	<!-- end first column -->
+			<div class="column col-md-6 col-lg-7">	<!-- open row that holds (2) columns for project 2 -->
+				<div id="story">	<!-- row for two columns>-->
+					<h3>My Story</h3>
+					<p>	<!--start of inro paragraph-->
+						Hi! I'm a User Experience Designer based in Frankfurt Main, Germany.
+					</p><!--end of inro paragraph-->
+
+					<p>	<!--start of first paragraph-->
+						UX designer with a background in accounting & auditing and extensive experience in designing and implementing digital training programs. Passionate about leveraging technology to develop learner-centred solutions.
+					</p>	<!--end of first paragraph-->
+
+					<p>	<!--start of second paragraph-->
+						I started my journey in accounting and finance but discovered my passion for Learning experience design.
+					</p>	<!--end of second paragraph-->
+
+					<p>	<!--start of third paragraph-->
+						My training experience has taught me to always look at things from a learning & delivery point of view while my accounting and auditing backgrounds have taught me to be methodical, keen and attentive to details in all my undertakings.
+						I enjoy using UX Design skills to create simple and articulate learning solutions that enhance the quality and delivery of learning. After working in Fintech company training, designing and implementing digital learning programmes,
+						improving and testing product designs, I felt attracted to this field and it felt natural to move into Learning experience design. Combining my experience in training, accounting and auditing with User Experience (UX) Design skills, I
+						enjoy creating simple, satisfying and learner centered learning experiences and solutions.
+					</p>	<!--end of third paragraph-->
+
+					<!-- <a  href="files/cv.pdf" download>Resume</a>-->
+					<a href="files/cv_nyaorobenjamin.pdf" target="_blank" class="button cv"> View Resume</a>
+				</div>
+			</div>	<!-- end second column -->
+		</div>   <!-- end row that holds (2) columns for project 1 -->
+	</div>
+
+	<div id="work"> <!--start of skills & tools container heading-->
+
+	<div id="skillstools"> <!--start of skills & tools container heading-->
+		<h2>Skills and Tools</h2>
+	</div> <!--end of skills & tools container heading-->
+	<div class="row reverseimg"> <!-- open row that holds (2) columns for project 2 -->
+		<div class="column col-md-6 col-lg-7">
+			<div id="skills">	<!--start of relevant skills container heading-->
+				<h3>Relevant Skills</h3>
+				<ul>
+					<li>User Research (Competitor Analysis, User interviews, Data Analysis)</li>
+					<li>User Flows & Journeys</li>
+					<li>Wireframing & Prototyping </li>
+					<li>Usability Testing </li>
+					<li>Learning Management System (LMS) audit</li>
+					<li>Moodle workplace, Totara, and Blackboard</li>
+					<li>Articulate, Adobe Captivate and iSpring</li>
+				</ul>
+			</div>  <!--end of relevant skills container heading-->
+			<div id="tools"> <!--start of tools I use container heading-->
+				<h3>Tools I use</h3>
+				<ul>
+					<li>Adobe XD, Illustrator, Photoshop</li>
+					<li>Figma</li>
+					<li>Sketch</li>
+					<li>Balsamiq</li>
+					<li>Invision</li>
+				</ul>
+			</div> <!--end of tools I use container heading-->
+		</div><!-- end row that holds (2) columns for project 2 -->
+
+		<div class="column col-md-6 col-lg-5"> <!-- open first column (used for image) -->
+			<picture>
+				<source media="(max-width:767px)" srcset="skillsimage.jpg">
+				<%= image_tag 'skillsimage.jpg', alt: 'My Image' %>
+			</picture>
+		</div>	<!-- end first column -->
+	</div> <!--end of skills & tools container heading-->
+</main>

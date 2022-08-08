@@ -75,3 +75,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# CUSTOMIZED GEMS
+
+gem "picture_tag"
