@@ -1,37 +1,27 @@
-    <main>
-        <div class="contentwrapper">
-            <div class="row">
-
-                <h2>SkillMaster</h2>
-
-                <div class="project-scr">
-                    <picture>
-                        <source srcset="img/skillmaster/projectpagecover.jpg" media="(max-width:767px)">
-                        <img src="img/skillmaster/projectpagecover.jpg" alt="My Image">
-                    </picture>
-                </div>
-                <div class="reverseimg">
-                    <div class="column col-md-6 col-lg-7">
-                        <!-- open row that holds (2) columns for project 2 -->
-                        <div id="story">
-                            <!-- row for two columns>-->
-                            <h3>Project Summary</h3>
-
-                            <h4>The Problem</h4>
-                            <p>Getting onboarded onto a professional software especially if it involves accounting where money and the complex tax issue is concerned can be a great challenge. This is considering that accounting software are developed in
-                                one part of the world and used accross the globe. Bearing in mind that every country have some specifics on accounting and taxes and are not uniform accross the globe. </p>
-
-                            <p>
-                                <h4>The Potential Solution</h4>
-
-                                <p>Developing an online learning platform where new users of the various accounting systems can connect width experts in their sofware of choice to learn. Similarly, the experts can charge a fee for their expertise and time.
-                                    With this new users can get someone close or in the same geopraphical location where accounting practices can be similar or near similar to take away their onboarding pain.
-                                </p>
-                                <!-- <a  href="files/cv.pdf" download>Resume</a>-->
-                                <a href="files/SkillMaster.pdf" target="_blank" class="button cv"> case study PDF</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+<main>
+		<div class="contentwrapper">
+			<div class="row">
+				<h2>SkillMaster</h2>
+				<div class="project-scr">
+					<%= image_tag "skillmaster/projectpagecover.jpg", alt: "My Image" %>
+				</div>
+				<div class="reverseimg">
+					<div class="column col-md-6 col-lg-7">
+						<!-- open row that holds (2) columns for project 2 -->
+						<div id="story">
+							<!-- row for two columns>-->
+							<h3>Project Summary</h3>
+							<h4>The Problem</h4>
+							<p>Getting onboarded onto a professional software especially if it involves accounting where money and the complex tax issue is concerned can be a great challenge. This is considering that accounting software are developed in
+									one part of the world and used accross the globe. Bearing in mind that every country have some specifics on accounting and taxes and are not uniform accross the globe. </p>
+							<h4>The Potential Solution</h4>
+							<p>Developing an online learning platform where new users of the various accounting systems can connect width experts in their sofware of choice to learn. Similarly, the experts can charge a fee for their expertise and time.
+									With this new users can get someone close or in the same geopraphical location where accounting practices can be similar or near similar to take away their onboarding pain.
+							</p>
+							<%= link_to "Case Study PDF", "SkillMaster.pdf", target: "_blank", class: "button cv" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</main>
