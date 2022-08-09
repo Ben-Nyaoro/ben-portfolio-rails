@@ -4,4 +4,16 @@ class PagesController < ApplicationController
 
   def about
   end
+
+	def fintrac
+	end
+
+	def waveaccounting
+	end
+
+	def skillmaster
+	end
+
+	def wordguru
+	end
 end

@@ -1,43 +1,24 @@
 	<h2 style="margin-top: 1.5em;">UX Work</h2>
-		<div class="row">	<!-- open row that holds (2) columns for project 2 -->
-			<div class="column col-md-6 col-lg-5">
-				<!-- open second column (used for text) -->
-				<h3>FinTrac</h3>
-				<!-- heading for the project -->
-				<p>
-					<!-- open paragraph -->
-					A financial management app that enables its users to manage all their bank and credit card balances and all transactions in one place.
-				</p>
-				<!-- end paragraph -->
-				<a href="fintrac.html" class="button">View Case Study
-					<div class="button__horizontal"></div>
-					<div class="button__vertical"></div>
-				</a>	<!-- button or link label -->								
-			</div> <!-- end second column -->
+		<div class="row reverseimg">	<!-- open row that holds (2) columns for project 2 -->
 			<div class="column col-md-6 col-lg-7"> <!-- open first column (used for image) -->
-				<picture>
-					<source media="(max-width:767px)" srcset="fintrac/coverimage_2x.jpg">
-					<%= image_tag 'fintrac/coverimage_2x.jpg', alt: 'My Image' %>
-				</picture>		
+				<%= image_tag 'fintrac/coverimage_2x.jpg', alt: 'My Image' %>
 			</div><!-- close first column (used for image) -->
+			<div class="column col-md-6 col-lg-5">	<!-- open second column (used for text) -->
+				<h3>FinTrac</h3>		<!-- heading for the project -->
+				<p>	<!-- open paragraph -->
+					A financial management app that enables its users to manage all their bank and credit card balances and all transactions in one place.
+				</p>	<!-- end paragraph -->		
+				<%= link_to "View Case Study", "fintrac.html", class: 'button' %>
+			</div> <!-- end second column -->
 		</div> <!-- end row that holds (2) columns for project 2 -->
 
-		<div class="row">
-			<!-- open row that holds (2) columns for project 1 -->
-			<div class="column col-md-6 col-lg-7">
-				<!-- open first column (used for image) -->
-				<picture>
-					<source media="(max-width:767px)" srcset="waveaccounting/coverimage_2x.jpg">
+		<div class="row">	<!-- open row that holds (2) columns for project 1 -->
+			<div class="column col-md-6 col-lg-7">	<!-- open first column (used for image) -->
 					<%= image_tag 'waveaccounting/coverimage_2x.jpg', alt: 'My Image' %>
-				</picture>
-			</div>
-			<!-- end first column -->
-			<div class="column col-md-6 col-lg-5">
-					<!-- open second column (used for text) -->
-					<h3>Wave Accounting</h3>
-					<!-- heading for the project 1 -->
-					<h4>An Unsolicited Design</h4>
-					<!-- heading for the project 1 -->
+			</div>	<!-- end first column -->
+			<div class="column col-md-6 col-lg-5">	<!-- open second column (used for text) -->
+					<h3>Wave Accounting</h3>	<!-- heading for the project 1 -->
+					<h4>An Unsolicited Design</h4>	<!-- heading for the project 1 -->
 					<p>	<!-- open paragraph -->
 						Bill upload feature, the much awaited catalyst to enhance digitization of accounting process.
 					</p> <!-- end paragraph -->
@@ -46,6 +27,10 @@
 		</div>   <!-- end row that holds (2) columns for project 1 -->
 
 		<div class="row reverseimg"> <!-- open row that holds (2) columns for project 2 -->
+			<div class="column col-md-6 col-lg-7"> <!-- open first column (used for image) -->
+					<%= image_tag 'skillmaster/coverimage_2x.jpg', alt: 'My Image' %>
+			</div>	<!-- close first column (used for image) -->
+
 			<div class="column col-md-6 col-lg-5">	<!-- open second column (used for text) -->
 				<h3>SkillMaster</h3> <!-- heading for the project -->
 				<p>	<!-- open paragraph -->
@@ -56,22 +41,12 @@
 					<div class="button__vertical"></div>
 				</a> <!-- button or link label -->
 				</div> <!-- end second column -->
-			<div class="column col-md-6 col-lg-7"> <!-- open first column (used for image) -->
-				<picture>
-					<source media="(max-width:767px)" srcset="skillmaster/coverimage_2x.jpg">
-					<%= image_tag 'skillmaster/coverimage_2x.jpg', alt: 'My Image' %>
-				</picture>
-			</div>	<!-- close first column (used for image) -->
 		</div> <!-- end row that holds (2) columns for project 2 -->
 
 		<div class="row">
 			<!-- open row that holds (2) columns for project 3 -->
-			<div class="column col-md-6 col-lg-7">
-				<!-- open first column (used for image) -->
-				<picture>
-					<source media="(max-width:767px)" srcset="wordguru/coverimage_2x.jpg">
+			<div class="column col-md-6 col-lg-7">	<!-- open first column (used for image) -->
 					<%= image_tag 'wordguru/coverimage_2x.jpg', alt: 'My Image' %>
-				</picture>
 			</div> <!-- end first column -->
 			<div class="column col-md-6 col-lg-5"> <!-- open second column (used for text) -->
 				<h3>Word Guru</h3> <!-- heading for the project -->
