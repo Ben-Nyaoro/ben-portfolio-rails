@@ -1,7 +1,6 @@
-	<header>
-		<!-- For the navigation -->
-		<div class="container">
-			<div class="navtoggle" id="myNavtoggle" data-controller="navtoggle">
+	<header>	<!-- For the navigation -->
+		<div class="container" data-controller="toggler">
+			<div  id="myNavtoggle" class="navtoggle"  data-toggler-target="navicon">
 				<div class="logo-size">
 					<img src="<%= image_path('sitelogo.png') %>" alt="Site Logo" class="logo">
 					<nav>
@@ -16,7 +15,7 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
 							<%# <li><a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a></li> %>
-							<li><a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a></li>
+							<li><a href="" class="icon" data-action="click->toggler#menuToggle"><i class="fas fa-bars"></i></a></li>
 						</ul>
 					</nav>
 				</div>
