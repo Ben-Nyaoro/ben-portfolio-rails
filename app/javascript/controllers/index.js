@@ -4,6 +4,12 @@
 
 import { application } from "./application"
 
+import FilterworkController from "./filterwork_controller"
+application.register("filterwork", FilterworkController)
+
+import HeaderdropdownController from "./headerdropdown_controller"
+application.register("headerdropdown", HeaderdropdownController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

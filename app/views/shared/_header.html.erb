@@ -1,21 +1,21 @@
 	<header>	<!-- For the navigation -->
 		<div class="container" data-controller="toggler">
-			<div  id="myNavtoggle" class="navtoggle"  data-toggler-target="navicon">
+			<div  id="myNavtoggle" class="navtoggle" data-toggler-target="navicon">
 				<div class="logo-size">
 					<img src="<%= image_path('sitelogo.png') %>" alt="Site Logo" class="logo">
 					<nav>
 						<ul>
 							<li class="parent"><a href="index.html">Work</a>
 								<ul class="dropdown-content">
-									<li><a href="index.html">All</a></li>
-									<li><a href="index.html">UX Work</a></li>
-									<li><a href="index.html">Web Development</a></li>
+									<li><a href="javascript:void(0);" data-action="click->filterwork#showAll">All</a></li>
+									<li><a href="javascript:void(0);" data-action="click->filterwork#showUXWork">UX Work</a></li>
+									<li><a href="javascript:void(0);" data-action="click->filterwork#showWebDevWork">Web Development</a></li>
 								</ul>
 							</li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
 							<%# <li><a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a></li> %>
-							<li><a href="" class="icon" data-action="click->toggler#menuToggle"><i class="fas fa-bars"></i></a></li>
+							<li><a href="javascript:void(0);" class="icon" data-action="click->toggler#menuToggleOpen"><i class="fas fa-bars"></i></a></li>
 						</ul>
 					</nav>
 				</div>

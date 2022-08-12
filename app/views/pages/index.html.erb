@@ -19,23 +19,23 @@
 			<div class="subnav">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All</a>
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" data-action="click->filterwork#showAll">All</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">UX Work</a>
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-action="click->filterwork#showUXWork">UX Work</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Web Development</a>
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" data-action="click->filterwork#showWebDevWork">Web Development</a>
 					</li>
 				</ul>
 			</div>
 			
-		<div class="uxwork">
-			<%= render "shared/uxwork" %>
-		</div> <!-- end of UX work container -->
-		<div class="webdevwork d-none">
-			<%= render "shared/webdevwork" %>
-		</div> <!-- end of UX work container -->
+			<div class="uxwork" data-filterwork-target="uxwork">
+				<%= render "shared/uxwork" %>
+			</div> <!-- end of UX work container -->
+			<div class="webdevwork" data-filterwork-target="webdevwork">
+				<%= render "shared/webdevwork" %>
+			</div> <!-- end of UX work container -->
 		</div> <!--End of class container-->
 	</div>  <!--End of work container-->
 </main>
