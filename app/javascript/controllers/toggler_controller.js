@@ -15,6 +15,8 @@ export default class extends Controller {
 	menuToggle() {
 		if (this.naviconTarget.classList.contains("navtoggle")) {
 			this.naviconTarget.classList.add("responsive");
+		} else {
+			this.naviconTarget.classList.remove("responsive");
 		}
 	}
 }
