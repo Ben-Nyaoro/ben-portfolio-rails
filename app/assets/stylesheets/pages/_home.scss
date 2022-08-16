@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+// Specific CSS for the home-page
 /*
 Colors used:
 primarily Color (orange) : #ffe4c4;
@@ -8,8 +8,9 @@ Secondary Color (yellow):  #F7B708;
   #efefef lightgrey colour for background
   #4a4a4a charcoal colour for header background
   #ffffff white colour for body background*/
+
 header {
-  position: fixed;
+	position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
@@ -103,9 +104,9 @@ nav>ul>li>a:active {
   box-sizing: border-box;
 }
 
-// body {
-//   // font-family: Asap, sans-serif;
-// }
+body {
+  font-family: Asap, sans-serif;
+}
 
 body {
   background-color: #ffffff;
@@ -304,7 +305,7 @@ a {
 }
 
 main {
-  padding-top: 100px;
+	padding-top: 50px;
 }
 
 #hero h1 {

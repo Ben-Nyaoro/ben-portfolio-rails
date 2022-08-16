@@ -2,10 +2,7 @@
 	<div class="contentwrapper">	<!--container block-->
 		<div class="row">			<!-- open row that holds (2) columns for project 1 -->
 			<div class="self-img column col-md-6 col-lg-5">	<!-- open first column (used for image) -->
-				<picture>
-					<source media="(max-width:767px)" srcset="selfimage_1x.png">
-					<%= image_tag 'selfimage_1x.png', alt: 'My Image' %>
-				</picture>
+				<%= image_tag 'selfimage_1x.png', alt: 'My Image' %>
 			</div>	<!-- end first column -->
 			<div class="column col-md-6 col-lg-7">	<!-- open row that holds (2) columns for project 2 -->
 				<div id="story">	<!-- row for two columns>-->
@@ -68,10 +65,7 @@
 		</div><!-- end row that holds (2) columns for project 2 -->
 
 		<div class="column col-md-6 col-lg-5"> <!-- open first column (used for image) -->
-			<picture>
-				<source media="(max-width:767px)" srcset="skillsimage.jpg">
-				<%= image_tag 'skillsimage.jpg', alt: 'My Image' %>
-			</picture>
+			<%= image_tag 'skillsimage.jpg', alt: 'My Image' %>
 		</div>	<!-- end first column -->
 	</div> <!--end of skills & tools container heading-->
 </main>
