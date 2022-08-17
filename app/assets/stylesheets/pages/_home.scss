@@ -9,21 +9,6 @@ Secondary Color (yellow):  #F7B708;
   #4a4a4a charcoal colour for header background
   #ffffff white colour for body background*/
 
-header {
-	position: relative;
-  width: 100%;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
-  /*adding shadows to the header section*/
-  background-color: #fcfcfc;
-  color: transparent;
-  padding: 10px 0;
-}
-
-header a {
-	text-decoration: none;
-}
 
 body a {
 	text-decoration: none;

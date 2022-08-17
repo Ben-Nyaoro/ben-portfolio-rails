@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
 	def wordguru
 	end
+
+	def comingsoon
+	end
 end

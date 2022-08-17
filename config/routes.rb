@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get :waveaccounting, to: "pages#waveaccounting"
   get :skillmaster, to: "pages#skillmaster"
   get :wordguru, to: "pages#wordguru"
+	get :comingsoon, to: "pages#comingsoon"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
