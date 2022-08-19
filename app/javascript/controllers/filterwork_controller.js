@@ -22,7 +22,7 @@ export default class extends Controller {
 		// Filter UX work
 	showUXWork() {
 		console.log("UX works");  
-		location.href = "index.html#uxwork"; // Redirect to index.html
+		location.href = "index.html#work"; // Redirect to index.html
 		this.uxworkTarget.classList.remove("d-none");
 		this.webdevworkTarget.classList.add("d-none");
 		this.uxworktitleTarget.innerText = "UX Work";
@@ -31,7 +31,7 @@ export default class extends Controller {
 		// Filter webdev work
 	showWebDevWork() {
 		console.log("Web Dev works");
-		location.href = "index.html#webdevwork"; // Redirect to index.html
+		location.href = "index.html#work"; // Redirect to index.html
 		this.uxworkTarget.classList.add("d-none");
 		this.webdevworkTarget.classList.remove("d-none");
 		this.webdevworktitleTarget.innerText = "Web Dev Work";
